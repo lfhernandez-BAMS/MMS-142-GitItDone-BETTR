@@ -14,7 +14,12 @@ Naming conventions for classes and ids for our files:
  1. all names (classes and ids) should use lowercase characters and do not use numbers or symbols as first characters when naming
  2. do not use symbols for naming except for hyphens - hyphens are used to concatenate names ex: wrong: "nav_list", "nav list" correct: "nav-list"
  3. when using numbers for identification, start with 001. Ex: correct: .class-001 , .class-002 wrong: .class-1 , .class-2
+ 4. names should reflect the class or id's purpose rather than position
 
 
-Coding conventions:
- 1. 
+Coding/github repo guidelines:
+ 1. Fixed id names for index.html (navigation ids):
+     #home , #shop , #about
+ 2. Help from AI is allowed but make sure AI is only there to HELP not completely make the entire code
+    should you use AI to help in structuring your code, make sure to indicate in the Website Progress Report in our GDoc
+ 4. When committing changes in github, make sure to add a proper description of what was revised 
