@@ -1,3 +1,9 @@
+How to add a new folder:
+ 1. Click 'add file'
+ 2. Click 'Create new file' from the dropdown menu
+ 3. Above the edit text area, type in the textbox '<foldername>/'
+ 4. Click commit changes
+
 How to edit files in github (no need to upload an updated file):
  1. open the file to be edited
  2. click on the pencil button at the top-right corner of the file preview
@@ -17,6 +23,9 @@ Naming conventions for classes and ids for our files:
  4. names should start with a section label, then page Ex: hero-index-backgroundimage 
  5. names should reflect the class or id's purpose rather than position
 
+Image folder guidelines:
+ 1. Make a subfolder for each html file. The only shared folder is for product pages (shirt designs)
+ 2. Put general images such as brand logo in images folder, no need for a subfolder. 
 
 Coding/github repo guidelines:
  1. Fixed id names for index.html (navigation ids):
