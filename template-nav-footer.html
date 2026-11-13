@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BETTR</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://googleapis.com/css2?family=Manrope:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar md:navbar-expand bg-1 border-bottom">
+        <div class="container">
+            <!--REMINDER: replace BETTR with an image src of the BETTR logo-->
+            <a class="navbar-text" href="#home">BETTR</a>
+
+            <button class="btn-icon navbar-toggler" type="button"
+                    data-bs-toggle="drawer" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
+            <div class="drawer-header">
+                <h5 class="drawer-title" id="mainNavLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+            </div>
+            <div class="drawer-body">
+                <ul class="nav navbar-nav md:ms-auto">
+                <!--for other pages, just move the /class nav-link active aria-current="page"/ into the correct navbar link-->
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </dialog>
+        </div>
+
+        </div>
+    </nav>
+    <header></header>
+    <main></main>
+        <footer class="bg-1 py-5 mt-auto" id="contact">
+            <div class="container py-12">
+                <div class="row g-4 mb-12 mt-2">
+                    <div class="col-12 md:col-3">
+                        <!--insert logo-->
+                        <span class="fw-bold fs-4 fg-1">BETTR</span>
+                    </div>
+                    <div class="col-12 md:col-3">
+                        <ul class="list-unstyled d-flex flex-column md:flex-column md:justify-content-between gap-2 mb-0">
+                            <li class="nav-item fg-2"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item fg-2"><a class="nav-link" href="#shop">Shop</a></li>
+                            <li class="nav-item fg-2"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item fg-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 md:col-3">
+                        <ul class="list-unstyled d-flex flex-column md:flex-column md:justify-content-between gap-2 mb-0">
+                            <li class="nav-item fg-2"><a class="nav-link" href="#">Help</a></li>
+                            <li class="nav-item fg-2"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+                            <li class="nav-item fg-2"><a class="nav-link" href="terms.html">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 md:col-3">
+                        <span class="fg-1">Get in touch:<br></span>
+                        <a href="mailto.hello@examplewebsite142.com">hello@examplewebsite142.com</a>                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
