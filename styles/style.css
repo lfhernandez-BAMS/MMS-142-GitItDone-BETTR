@@ -1,0 +1,20 @@
+/*PSEUDOCLASS*/
+
+/*NAVBAR and HERO stylesheet*/
+.navbar-text {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.hero-header {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.hero-subheader {
+    font-family: 'Manrope', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+/*index.html SHOP / FEATURED PRODUCTS stylesheet*/
+
+
