@@ -264,6 +264,56 @@ footer a {
     font-weight: 700;
 }
 
+/* - Terms and Conditions Page Stylesheet - */
+
+.terms-hero {
+    background-color: #fdfbf5;
+    padding: 7rem 0 2.5rem;
+}
+
+.terms-hero h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 1rem;
+}
+
+.terms-intro {
+    max-width: 34rem;
+    margin-bottom: 0;
+}
+
+.terms-body {
+    padding: 3rem 0 5rem;
+}
+
+.terms-list {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.terms-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.terms-number {
+    flex: 0 0 2rem;
+    letter-spacing: 0.08em;
+    color: #595959;
+}
+
+.terms-item h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.terms-item p {
+    margin-bottom: 0;
+}
+
 /* - Media queries:
     Check the layout for this screen sizes, then
     check whether there are layout mismatches.
