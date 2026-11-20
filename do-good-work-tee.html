@@ -143,62 +143,64 @@
             </div>
         </section>
 
-<!-- Section 2: Product information tabs and gallery -->
-<section class="py-8 px-4 md:px-12 mb-12">
-    <div class="container">
-        <h2 class="sr-only">Product information</h2>
-        <div class="row g-8 align-items-start">
+        <!--Section 2: Product Details-->
+        <section class="py-8 px-4 md:px-12">
+        <div class="container">
+            <div class="row g-8 align-items-start">
 
+            
             <div class="col-12 md:col-6">
-                <div class="product-tabs" role="tablist" aria-label="Product information">
-                    <button type="button" role="tab" id="tab-details" aria-controls="panel-details" aria-selected="true">Details</button>
-                    <button type="button" role="tab" id="tab-size" aria-controls="panel-size" aria-selected="false" tabindex="-1">Size Chart</button>
-                    <button type="button" role="tab" id="tab-care" aria-controls="panel-care" aria-selected="false" tabindex="-1">Care Instructions</button>
-                </div>
+                <!-- Tab Navigation Bar -->
+                <ul class="nav border-secondary-subtle gap-6 mb-6" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button
+                    type="button"
+                    class="nav-link active px-0 pb-3 text-dark fw-semibold border-0 border-bottom border-2 border-info rounded-0 bg-transparent"
+                    aria-current="page"
+                    >
+                    Details
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                    type="button"
+                    class="nav-link px-0 pb-3 text-muted border-0 rounded-0 bg-transparent"
+                    >
+                    Size Chart
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                    type="button"
+                    class="nav-link px-0 pb-3 text-muted border-0 rounded-0 bg-transparent"
+                    >
+                    Care Instructions
+                    </button>
+                </li>
+                </ul>
 
-                <div id="panel-details" role="tabpanel" aria-labelledby="tab-details" tabindex="0">
-                    <p>Do good work and let the results speak. The Do Good Work Tee comes in olive green with a relaxed, drop-shoulder fit and a subtle tonal WRK print on the chest. Quiet on the outside, made for people who show up and deliver.</p>
-                </div>
+                <!--Tab Content: Details-->
+                <div>
+                <!--REMINDER: replace filler text with the correct text (see mockups in figma file)-->
+                <p class="text-muted mb-6">
+                    Designed for comfort, made for every day. The Everyday Comfort Tee combines a clean, 
+                    minimalist look with an effortless feel, making it a reliable choice for any occasion. 
+                    Whether you're relaxing at home or heading out, it's a reminder that feeling good starts with the simple things.
+                </p>
 
-                <div id="panel-size" role="tabpanel" aria-labelledby="tab-size" tabindex="0" hidden>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <caption>Do Good Work Tee size chart, in centimeters</caption>
-                            <thead>
-                                <tr><th scope="col">Size</th><th scope="col">Chest width</th><th scope="col">Length</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><th scope="row">XS</th><td>52</td><td>68</td></tr>
-                                <tr><th scope="row">S</th><td>54</td><td>70</td></tr>
-                                <tr><th scope="row">M</th><td>56</td><td>72</td></tr>
-                                <tr><th scope="row">L</th><td>58</td><td>74</td></tr>
-                                <tr><th scope="row">XL</th><td>60</td><td>76</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div id="panel-care" role="tabpanel" aria-labelledby="tab-care" tabindex="0" hidden>
-                    <ul>
-                        <li>Machine wash cold, inside out.</li>
-                        <li>Do not bleach.</li>
-                        <li>Tumble dry low.</li>
-                        <li>Iron on low heat on the reverse side, away from the print.</li>
-                    </ul>
                 </div>
             </div>
 
-            <div class="col-12 md:col-6">
-                <div class="detail-gallery">
-                    <img src="images/do-good-work-tee001.png" alt="Do Good Work Tee, front view" width="1500" height="1500" loading="lazy">
-                    <img src="images/do-good-work-tee002.png" alt="Do Good Work Tee, back view" width="1500" height="1500" loading="lazy">
-                    <img src="images/do-good-work-tee003.png" alt="Close-up of the tonal WRK print" width="1500" height="1500" loading="lazy">
-                </div>
+            
+            <div class="col-12 md:col-6 d-flex flex-row gap-4 py-12 ">
+                <img src="images/cat001.jpg" alt="Do Good Work Tee Preview-1" class="img-fluid detail-gallery-img">
+                <img src="images/cat002.jpg" alt="Do Good Work Tee Preview-2" class="img-fluid detail-gallery-img">
+                <img src="images/cat003.jpg" alt="Do Good Work Tee Preview-3" class="img-fluid detail-gallery-img">
             </div>
 
+            </div>
         </div>
-    </div>
-</section>
+        </section>
 
     </main>
     <footer class="bg-1 mt-auto" id="contact">
