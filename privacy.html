@@ -11,17 +11,95 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="js/navigation.js" defer></script>
      <style>
-        /* PRIVACY POLICY PAGE STYLES */
+    /* MAIN CONTENT */
 
-        .privacy-page .privacy-content {
-            background-color: #ffffff;
-            color: #252525;
-        }
+.privacy-page .privacy-content {
+    width: 100%;
+    background-color: #ffffff;
+    color: #252525;
+    padding: 60px 20px;
+}
 
-        .privacy-page .privacy-content p,
-        .privacy-page .privacy-content li {
-            color: #252525;
-        }
+/* GENERAL TEXT */
+
+.privacy-page .privacy-content p,
+.privacy-page .privacy-content li {
+    color: #252525;
+    font-family: var(--bs-body-font);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* INTRODUCTION AND POLICY SECTIONS */
+
+.privacy-page .privacy-introduction,
+.privacy-page .privacy-section {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* INTRODUCTION */
+
+.privacy-page .privacy-introduction {
+    margin-bottom: 60px;
+}
+
+.privacy-page .privacy-introduction p {
+    margin-bottom: 20px;
+}
+
+/* POLICY SECTIONS */
+
+.privacy-page .privacy-section {
+    margin-bottom: 55px;
+}
+
+.privacy-page .privacy-section h2 {
+    font-family: var(--bs-heading-font);
+    font-size: 24px;
+    font-weight: 700;
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+/* BULLET POINTS */
+
+.privacy-page .privacy-section ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.privacy-page .privacy-section li {
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .privacy-page .privacy-content {
+        padding: 40px 20px;
+    }
+
+    .privacy-page .privacy-introduction {
+        margin-bottom: 40px;
+    }
+
+    .privacy-page .privacy-section {
+        margin-bottom: 40px;
+    }
+
+    .privacy-page .privacy-section h2 {
+        font-size: 21px;
+    }
+
+    .privacy-page .privacy-content p,
+    .privacy-page .privacy-content li {
+        font-size: 14px;
+    }
+
+}
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100 privacy-page">
