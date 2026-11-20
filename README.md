@@ -1,3 +1,28 @@
+----NOTICE----
+
+Check README every time you  
+open the repo to see if there
+are important notices.
+
+----end of notice----
+
+----New Updates 11/20/2026----
+
+DO NOT USE product-1.html and script.js as template for navbar & footer
+and navigation script respectively anymore. these files are already obsolete and has not been updated
+since the addition of dedicated JS files.
+
+for the updated navbar and footer templates, see term.html.
+use:
+contact-mailto.js for contact.html
+order-mailto.js for product pages (this also includes other
+     custom scripts for product previews.)
+
+     
+-----end of updates---
+
+
+-----Tutorials---------
 How to add a new folder:
  1. Click 'add file'
  2. Click 'Create new file' from the dropdown menu
