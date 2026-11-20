@@ -17,8 +17,13 @@
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar md:navbar-expand bg-1 fixed-top py-3 border-bottom">
         <div class="container">
-        <!--REMINDER: replace BETTR with an image src of the BETTR logo-->
-            <a class="navbar-brand" href="index.html"><img src="images/BETTR-logo-primary.png" alt="BETTR" style="height: 24px; width: auto;;"></a>
+        
+            <a class="navbar-brand" href="index.html">
+                <picture>
+                    <source srcset="images/BETTR-logo-primary-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="images/BETTR-logo-primary.png" alt="BETTR" style="height: 24px; width: auto;;">
+                </picture>
+            </a>
 
             <button class="btn-icon navbar-toggler ms-auto" type="button"
                     data-bs-toggle="drawer" data-bs-target="#mainNav"
@@ -38,12 +43,19 @@
                             <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
                         </ul>
                     </div>
-                    <div class="d-flex flex-column md:flex-row md:align-items-center md:ms-12 gap-3 md:gap-4 mt-3 md:mt-0">
-                        <ul class="nav navbar-nav nav-underline gap-2 md:gap-4">
+                                        <div class="d-flex flex-column md:flex-row md:align-items-center md:ms-auto gap-3 md:gap-4 mt-3 md:mt-0">
+                        <ul class="nav navbar-nav gap-2 md:gap-4">
                         <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
+                    <div class="d-flex flex-column md:flex-row md:align-items-center gap-3 md:gap-4 md:mb-1 ">
+                        <picture>
+                            <source media="(prefers-color-scheme: dark)" srcset="images/search-icon-dark.png">
+                            <img src="images/search-icon.png" alt="search-icon" style="width: 16px;height: auto;">
+                        </picture>
+                    </div>
+
                 </div>
             </dialog>
         </div>
@@ -217,9 +229,15 @@
                         <li class="nav-item fg-2"><a class="nav-link" href="terms.html">Terms and Conditions</a></li>
                     </ul>
                 </div>
-                <div class="col-12 lg:col-3 lg:text-start md:text-center">
-                    <span class="mb-1">Get in touch:</span>
-                    <a href="mailto.hello@examplewebsite142.com">hello@examplewebsite142.com</a>                        
+                <div class="col-12 md:col-3">
+                    <ul class="list-unstyled d-flex flex-column md:justify-content-between gap-2 mb-0">
+                        <li><b>Get in touch:</b></li>
+                        <li class="fs-sm"><a href="contact.html">hello@examplewebsite142.com</a></li>
+                        <ul class="list-unstyled d-flex flex-column md:justify-content-between gap-2 mb-0">
+                            <li><img src="images/insta-icon.png" alt="instagram-link" style="width: 24px;height: auto;"></li>
+                        </ul>
+                    </ul>
+                                            
                 </div>
             </div>
         </div>
