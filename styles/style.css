@@ -7,8 +7,8 @@
 
 /* - PSEUDOCLASS -*/
 :root {
-    --bs-body-font: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
-    --bs-heading-font: 'Manrope', Arial, Helvetica, san-serif;
+    --bs-body-font: 'Manrope', Arial, Helvetica, san-serif;
+    --bs-heading-font: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
     --primary: #72bee1;
     --muted:  #7cabc0;
     --secondary: #ffeac9;
@@ -62,16 +62,16 @@ footer a {
 
 /*NAVBAR and HERO stylesheet*/
 .navbar-text {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: var(--bs-body-font);
 }
 
 .hero-header {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: var(--bs-body-font);
     font-weight: 700;
 }
 
 .hero-subheader {
-    font-family: 'Manrope', Georgia, 'Times New Roman', Times, serif;
+   font-family: var(--bs-heading-font);
     font-weight: 400;
 }
 
