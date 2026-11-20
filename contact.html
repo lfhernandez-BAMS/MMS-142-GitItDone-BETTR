@@ -1,166 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | BETTR</title>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <!--custom css goes AFTER bootstrap so our styles can override it-->
     <link rel="stylesheet" href="styles/style.css">
     <script src="js/navigation.js" defer></script>
     <script src="js/contact-mailto.js" defer></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar md:navbar-expand bg-1 fixed-top py-3 border-bottom">
+    <nav class="navbar md:navbar-expand bg-1 py-3 border-bottom">
+
         <div class="container">
-        
-            <a class="navbar-brand" href="index.html">
-                <picture>
-                    <source srcset="images/BETTR-logo-primary-dark.png" media="(prefers-color-scheme: dark)">
-                    <img src="images/BETTR-logo-primary.png" alt="BETTR" style="height: 24px; width: auto;;">
-                </picture>
-            </a>
+            <!--REMINDER: replace BETTR with an image src of the BETTR logo-->
+            <a class="navbar-brand" href="index.html">BETTR</a>
 
             <button class="btn-icon navbar-toggler ms-auto" type="button"
                     data-bs-toggle="drawer" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
 
             <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" aria-labelledby="mainNavLabel">
                 <div class="drawer-header">
-                <h5 class="drawer-title" id="mainNavLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                    <h5 class="drawer-title" id="mainNavLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
                 </div>
-                <div class="drawer-body md:justify-content-between md:mx-12">
-                    <div class="d-flex flex-column md:flex-row md:align-items-center gap-3 md:gap-4 mt-3 md:mt-0">
-                        <ul class="nav navbar-nav nav-underline gap-2 md:gap-4">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
-                        </ul>
-                    </div>
+                <div class="drawer-body">
+                    <ul class="nav navbar-nav gap-2 md:gap-4">
+                    <!--for other pages, just move the /class nav-link active aria-current="page"/ into the correct navbar link-->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
+                    </ul>
+
                     <div class="d-flex flex-column md:flex-row md:align-items-center md:ms-auto gap-3 md:gap-4 mt-3 md:mt-0">
-                        <ul class="nav navbar-nav nav-underline gap-2 md:gap-4">
-                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                        <ul class="nav navbar-nav gap-2 md:gap-4">
+                            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link active text-decoration-underline underline-primary" aria-current="page" href="contact.html">Contact</a></li>
                         </ul>
-                    </div>
-                    <div class="d-flex flex-column md:flex-row md:align-items-center gap-3 md:gap-4 md:mb-1 ">
-                        <picture>
-                            <source media="(prefers-color-scheme: dark)" srcset="images/search-icon-dark.png">
-                            <img src="images/search-icon.png" alt="search-icon" style="width: 16px;height: auto;">
-                        </picture>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <button type="button" class="btn p-0 border-0 bg-transparent" aria-label="Search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                            <a href="contact.html" class="nav-link p-0" aria-label="Email or Contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </dialog>
         </div>
     </nav>
 
-    <header class="pt-12">
-        <!--Hero Section-->
-        <section class="py-12 bg-primary">
-            <div class="container">
-                <h2 class="fs-4xl fw-bold">Say hello.</h2>
-                <p class="mb-0">
-                Got something on your mind? <br>
-                Whether it's about your order or anything in between, <br>
+    <!--Header: "Say hello." band-->
+    <header class="bg-2 py-10 md:py-12">
+        <div class="container">
+            <h1 class="fw-bold mb-4">Say hello.</h1>
+            <p class="text-muted small mb-0 hero-contact-text">
+                Got something on your mind?<br>
+                Whether it's about your order or anything in between,<br class="d-none md:d-inline">
                 we'd love to hear from you.
-                </p>
-            </div>
-        </section>
+            </p>
+        </div>
     </header>
 
     <main>
-        <!--Short message, Business Hours & Response Time-->
-        <section class="bg-secondary py-12">
-            <form id="contact-form" class="contact-form" action="#" method="post">
-                <div class="container">
-                <div class="row g-4 align-items-start">
-                    
-                    <!-- Left Column -->
-                    <div class="col-12 md:col-6">
-                    <h3>Always a room for BETTR.</h3>
-                    <p class="mb-6">
-                        We're constantly learning and finding ways to improve. <br>
-                        Your thoughts and feedback help us move in the right direction. <br><br>
-                        For concerns related to your order, please include your order number in your message.
-                    </p>
+        <!--Section 1: Contact Info (left) and Message Form (right)-->
+        <section class="py-10 md:py-12 my-8">
+            <div class="container">
+                <div class="row g-8 align-items-start">
 
-                    <div class="d-flex align-items-start gap-4 mb-4">
-                        <div class="md:col-2 col-3">
-                            <img src="images/clock-icon.png" alt="business-hours-img" class="contact-body-img">
-                        </div>
-                        <div>
-                            <h3 class="fw-bold fs-lg mb-1">Business Hours</h3>
-                            <p class="fs-md mb-0">
-                                Monday - Friday <br>
-                                9:00 AM - 6:00 PM (PDT)
-                            </p>
-                        </div>
+                    <!--Left: Info text, Business Hours, Response Time-->
+                    <div class="col-12 lg:col-6">
+                        <h2 class="fs-lg fw-bold mb-2">Always a room for BETTR.</h2>
+                        <p class="mb-4">
+                            We're constantly learning and finding ways to improve.
+                            Your thoughts and feedback help us move in the right direction.
+                        </p>
+                        <p class="mb-8">
+                            For concerns related to your order, please include your order number in your message.
+                        </p>
+
+                        <ul class="list-unstyled d-flex flex-column gap-6 mb-0">
+                            <li class="d-flex align-items-start gap-4">
+                                <!--Clock icon-->
+                                <svg class="contact-body-img flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                                    <circle cx="24" cy="24" r="20"/>
+                                    <path d="M24 12v12l6 7"/>
+                                </svg>
+                                <div>
+                                    <h3 class="fs-lg fw-bold mb-1">Business Hours</h3>
+                                    <p class="mb-0">Monday - Friday<br>9:00 AM - 6:00 PM (PHT)</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-4">
+                                <!--Speech bubble icon-->
+                                <svg class="contact-body-img flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M24 7C13.5 7 5 13.7 5 22c0 4.6 2.6 8.7 6.7 11.4L10 41l8.6-4.6c1.7.4 3.5.6 5.4.6 10.5 0 19-6.7 19-15S34.5 7 24 7z"/>
+                                    <circle cx="16" cy="22" r="1.8" fill="currentColor" stroke="none"/>
+                                    <circle cx="24" cy="22" r="1.8" fill="currentColor" stroke="none"/>
+                                    <circle cx="32" cy="22" r="1.8" fill="currentColor" stroke="none"/>
+                                </svg>
+                                <div>
+                                    <h3 class="fs-lg fw-bold mb-1">Response Time</h3>
+                                    <p class="mb-0">We typically respond within 1–2 business days.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="d-flex align-items-start gap-4">
-                        <div class="md:col-2 col-3">
-                            <img src="images/chat-icon.png" alt="response-time-img" class="contact-body-img">
-                        </div>
-                        <div>
-                            <h3 class="fw-bold fs-lg mb-1">Response Time</h3>
-                            <p class="fs-md mb-0">We typically respond within 1-2 business days</p>
-                        </div>
-                    </div>
-                    </div>
+                    <!--Right: Message Form-->
+                    <div class="col-12 lg:col-6">
+                        <form id="form-contact-message" class="bg-2 p-6 md:p-10">
+                            <div class="mb-6">
+                                <label for="form-contact-name" class="form-label fw-bold">Name</label>
+                                <input type="text" id="form-contact-name" name="name" class="form-control rounded-0 contact-form-input" autocomplete="name" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="form-contact-email" class="form-label fw-bold">Email Address</label>
+                                <input type="email" id="form-contact-email" name="email" class="form-control rounded-0 contact-form-input" autocomplete="email" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="form-contact-text" class="form-label fw-bold">Message</label>
+                                <textarea id="form-contact-text" name="message" rows="5" class="form-control rounded-0 contact-form-input" required></textarea>
+                            </div>
 
-                    <!-- Right Column (Form Card) -->
-                    <div class="col-12 md:col-6">
-                    <div class="bg-primary p-6 md:p-8">
-                        <div class="pb-4">
-                        <label class="fw-bold fs-lg" for="input-name">Name <span class="required fw-normal">(Required)</span></label>
-                        <input type="text" class="form-control rounded-0 border-black" id="input-name" name="input-name" required autocomplete="name">
-                        </div>
-                        <div class="pb-4">
-                        <label class="fw-bold fs-lg" for="email">Email Address <span class="required fw-normal">(Required)</span></label>
-                        <input type="email" class="form-control rounded-0 border-black" id="email" name="email" required autocomplete="email">
-                        </div>
-                        <div class="pb-4">
-                        <label class="fw-bold fs-lg" for="topic">Select a Topic <span class="required fw-normal">(Required)</span></label>
-                        <select id="topic" class="form-control rounded-0 border-black" required>
-                            <option value="">Choose a topic</option>
-                            <option value="order">A question about an order</option>
-                            <option value="product">A question about a product</option>
-                            <option value="feedback">Send a feedback</option>
-                            <option value="other">Other</option>
-                        </select>
-                        </div>
-                        <div class="pb-6">
-                        <label class="fw-bold fs-lg" for="message">Message <span class="required fw-normal">(Required)</span></label>
-                        <textarea class="form-control rounded-0 border-black" name="message" rows="3" id="message" required></textarea>
-                        </div>
-                        <div class="d-flex">
-                        <button class="bg-secondary send-message-btn ms-auto py-3 px-8 border-black" type="submit">Send Message</button>
-                        </div>
-                    </div>
+                            <div class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                <p class="text-muted small d-flex align-items-start gap-2 mb-0">
+                                    <span aria-hidden="true">ⓘ</span>
+                                    <span>Opens your email app with your message filled in.</span>
+                                </p>
+                                <button type="submit" class="btn rounded-0 px-4 py-2 send-message-btn">Send message</button>
+                            </div>
+                        </form>
                     </div>
 
                 </div>
-                </div>
-            </form>
+            </div>
         </section>
     </main>
+
     <footer class="bg-1 mt-auto" id="contact">
-        <div class="container pt-4">
+        <div class="container py-4">
             <div class="row g-4 mb-12 mt-2">
                 <div class="col-12 md:col-3">
-                        <!--REMINDER: replace this span with BETTR logo-->
-                        <img src="images/BETTR-logo-primary.png" alt="BETTR" style="height: 24px;width: auto;">
+                    <!--REMINDER: replace this span with BETTR logo-->
+                    <span class="fw-bold fs-4 fg-1">BETTR</span>
                 </div>
                 <div class="col-12 md:col-3">
                     <ul class="list-unstyled d-flex flex-column md:flex-column md:justify-content-between gap-2 mb-0">
                         <li class="nav-item fg-2"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item fg-2"><a class="nav-link" href="index.html#shop">Shop</a></li>
                         <li class="nav-item fg-2"><a class="nav-link" href="index.html#about">About</a></li>
-                        <li class="nav-item fg-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item fg-2"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-12 md:col-3">
@@ -171,19 +173,15 @@
                     </ul>
                 </div>
                 <div class="col-12 md:col-3">
-                    <ul class="list-unstyled d-flex flex-column md:justify-content-between gap-2 mb-0">
-                        <li><b>Get in touch:</b></li>
-                        <li class="fs-sm"><a href="contact.html">hello@examplewebsite142.com</a></li>
-                        <ul class="list-unstyled d-flex flex-column md:justify-content-between gap-2 mb-0">
-                            <li><img src="images/insta-icon.png" alt="instagram-link" style="width: 24px;height: auto;"></li>
-                        </ul>
-                    </ul>
-                                            
+                    <span class="fg-1">Get in touch:<br></span>
+                    <a href="mailto:hello@examplewebsite142.com">hello@examplewebsite142.com</a>
                 </div>
             </div>
         </div>
-        <div class="d-flex pb-4 border-top border-2 border-black m-5 md:m-12">
-            <span class="fg-1">&copy; 2026 BETTR. All rights reserved.</span>
+        <div class="border-top border-2">
+            <div class="container py-4">
+                <span class="fg-1">&copy; 2026 BETTR. All rights reserved.</span>
+            </div>
         </div>
     </footer>
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
