@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -16,7 +16,10 @@
 
         <div class="container">
             <!--REMINDER: replace BETTR with an image src of the BETTR logo-->
-            <a class="navbar-brand" href="index.html">BETTR</a>
+            <picture>
+                <source srcset="images/BETTR-logo-primary-dark.png" media="(prefers-color-scheme: dark)">
+                <img src="images/BETTR-logo-primary.png" alt="BETTR" style="height: 24px;width: auto;">
+            </picture>
 
             <button class="btn-icon navbar-toggler ms-auto" type="button"
                     data-bs-toggle="drawer" data-bs-target="#mainNav"
@@ -30,29 +33,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
                 </div>
                 <div class="drawer-body">
-                    <ul class="nav navbar-nav gap-2 md:gap-4">
+                    <ul class="nav navbar-nav nav-underline gap-2 md:gap-4">
                     <!--for other pages, just move the /class nav-link active aria-current="page"/ into the correct navbar link-->
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
                     </ul>
-
-                    <div class="d-flex flex-column md:flex-row md:align-items-center md:ms-auto gap-3 md:gap-4 mt-3 md:mt-0">
-                        <ul class="nav navbar-nav gap-2 md:gap-4">
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-
-                    <div class="d-flex align-items-center gap-3">
-                            <button type="button" class="btn p-0 border-0 bg-transparent" aria-label="Search">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                </svg>
-                            </button>
-                            <a href="contact.html" class="nav-link p-0" aria-label="Email or Contact">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                                </svg>    
-                    </div>
+                </div
+                <div class="d-flex flex-column md:flex-row md:align-items-center md:ms-auto gap-3 md:gap-4 mt-3 md:mt-0">
+                    <ul class="nav navbar-nav nav-underline gap-2 md:gap-4">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="d-flex flex-column md:flex-row md:align-items-center gap 3 md:gap-4 md:mb-1">
+                        <picture>
+                            <source srcset="images/search-icon-dark.png" media="(prefers-color-scheme: dark)">
+                            <img src="images/search-icon.png" alt="search-icon" style="width: 16px;height: auto;">
+                        </picture>
                 </div>
             </dialog>
         </div>
@@ -163,9 +161,13 @@
                         </ul>
                     </div>
                     <div class="col-12 md:col-3">
-                        <span class="fg-1">Get in touch:<br></span>
-                        <a href="mailto.hello@examplewebsite142.com">hello@examplewebsite142.com</a>                        
-                    </div>
+                        <ul class="list-unstyled d-flex flex-column md:justify-content-between gap-2 mb-0">
+                            <li><b>Get in touch:</b></li>
+                            <li class="fs-sm"><a href="contact.html">hello@examplewebsite142.com</a></li>
+                            <ul class="list-unstyled d-flex flex-column md:justify-content-between gap-2 mb-0">
+                            <li><img src="images/insta-icon.png" alt="instagram-link" style="width: 24px;height: auto;"></li>
+                        </ul>
+                    </ul>
                 </div>
             </div>
         </footer>
