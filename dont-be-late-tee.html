@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="js/navigation.js" defer></script>
     <script src="js/order-mailto.js" defer></script>
+    <script src="js/tabs.js" defer></script>
 </head>
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar md:navbar-expand bg-1 fixed-top py-3 border-bottom">
@@ -151,22 +152,29 @@
 
             
             <div class="col-12 md:col-6">
-                <!-- Tab Navigation Bar -->
-                <ul class="nav border-secondary-subtle gap-6 mb-6 pb-3" role="tablist">
+               <!-- Tab Navigation Bar -->
+                <ul class="nav flex-wrap border-secondary-subtle gap-6 mb-6" role="tablist" aria-label="Product information">
                 <li class="nav-item" role="presentation">
                     <button
                     type="button"
-                    class="nav-link active px-0 pb-3 fg-black fw-semibold border-0 border-bottom border-2 border-info rounded-0 bg-transparent"
-                    aria-current="page"
+                    id="tab-details"
+                    role="tab"
+                    aria-controls="panel-details"
+                    aria-selected="true"
+                    class="nav-link active px-0 pb-3 text-dark fw-semibold border-0 border-bottom border-2 border-info rounded-0 bg-transparent"
                     >
                     Details
                     </button>
                 </li>
-                <!--THIS SECTION DOES NOT WORK YET, only a placeholder-->
                 <li class="nav-item" role="presentation">
                     <button
                     type="button"
-                    class="nav-link px-0 pb-3 fg-black border-0 rounded-0 bg-transparent"
+                    id="tab-size"
+                    role="tab"
+                    aria-controls="panel-size"
+                    aria-selected="false"
+                    tabindex="-1"
+                    class="nav-link px-0 pb-3 text-muted border-0 rounded-0 bg-transparent"
                     >
                     Size Chart
                     </button>
@@ -174,24 +182,62 @@
                 <li class="nav-item" role="presentation">
                     <button
                     type="button"
-                    class="nav-link px-0 pb-3 fg-black border-0 rounded-0 bg-transparent"
+                    id="tab-care"
+                    role="tab"
+                    aria-controls="panel-care"
+                    aria-selected="false"
+                    tabindex="-1"
+                    class="nav-link px-0 pb-3 text-muted border-0 rounded-0 bg-transparent"
                     >
                     Care Instructions
                     </button>
                 </li>
-                <!--End of Placeholder Section-->
                 </ul>
 
                 <!--Tab Content: Details-->
-                <div>
-                <!--REMINDER: replace filler text with the correct text (see mockups in figma file)-->
-                <p class="text-muted mb-6 border-top pt-4">
-                    Good things start with showing up. The <b>Don't Be Late Tee</b> pairs a simple statement with a clean, effortless
-                        design, making it an easy choice for everyday wear. Whether you're heading out or taking on the day. It's
-                        a reminder to show up, stay present, and make the most of what's ahead.
-                    </b>
+                <div id="panel-details" role="tabpanel" aria-labelledby="tab-details" tabindex="0">
+                <p class="text-muted mb-6">
+                   Good things start with showing up. The Don't Be Late Tee 
+                    pairs a simple statement with a clean, effortless design, 
+                    making it an easy choice for everyday wear. Whether you're 
+                    heading out or taking on the day, it's a reminder to show up, 
+                    stay present, and make the most of what's ahead.
                 </p>
+                </div>
 
+                <!--Tab Content: Size Chart-->
+                <div id="panel-size" role="tabpanel" aria-labelledby="tab-size" tabindex="0" hidden>
+                <div class="table-responsive mb-6">
+                    <table class="table">
+                        <caption>Don't Be Late Tee size chart, in centimeters</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Size</th>
+                                <th scope="col">Chest width</th>
+                                <th scope="col">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">XS</th><td>52</td><td>68</td></tr>
+                            <tr><th scope="row">S</th><td>54</td><td>70</td></tr>
+                            <tr><th scope="row">M</th><td>56</td><td>72</td></tr>
+                            <tr><th scope="row">L</th><td>58</td><td>74</td></tr>
+                            <tr><th scope="row">XL</th><td>60</td><td>76</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small text-muted mb-6">Chest width is measured flat, from armpit to armpit. Length is measured from the highest point of the shoulder to the hem.</p>
+                </div>
+
+                <!--Tab Content: Care Instructions-->
+                <div id="panel-care" role="tabpanel" aria-labelledby="tab-care" tabindex="0" hidden>
+                <ul class="mb-6">
+                    <li>Machine wash cold, inside out.</li>
+                    <li>Do not bleach.</li>
+                    <li>Tumble dry low, or hang dry to keep the shape.</li>
+                    <li>Iron on low heat on the reverse side, away from the print.</li>
+                    <li>Wash with similar colors.</li>
+                </ul>
                 </div>
             </div>
 
