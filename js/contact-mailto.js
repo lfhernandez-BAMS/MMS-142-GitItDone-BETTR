@@ -5,9 +5,9 @@ const TO_ADDRESS = "hello@examplewebsite142.com"
 const form = document.querySelector("#contact-form")
 
 function buildMailto() {
-    const name = document.querySelector("#input-name").value;
-    const email = document.querySelector("#email").value;
-    const text = document.querySelector("#message").value;
+    const name = document.querySelector("#form-contact-name").value;
+    const email = document.querySelector("#form-contact-email").value;
+    const text = document.querySelector("#form-contact-message").value;
 
     const subject = "Customer Inquiry"
     const body =
