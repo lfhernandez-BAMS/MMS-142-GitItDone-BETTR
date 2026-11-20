@@ -151,12 +151,15 @@
             
             <div class="col-12 md:col-6">
                 <!-- Tab Navigation Bar -->
-                <ul class="nav border-secondary-subtle gap-6 mb-6" role="tablist">
+                <ul class="nav flex-wrap border-secondary-subtle gap-6 mb-6" role="tablist" aria-label="Product information">
                 <li class="nav-item" role="presentation">
                     <button
                     type="button"
+                    id="tab-details"
+                    role="tab"
+                    aria-controls="panel-details"
+                    aria-selected="true"
                     class="nav-link active px-0 pb-3 text-dark fw-semibold border-0 border-bottom border-2 border-info rounded-0 bg-transparent"
-                    aria-current="page"
                     >
                     Details
                     </button>
@@ -164,6 +167,11 @@
                 <li class="nav-item" role="presentation">
                     <button
                     type="button"
+                    id="tab-size"
+                    role="tab"
+                    aria-controls="panel-size"
+                    aria-selected="false"
+                    tabindex="-1"
                     class="nav-link px-0 pb-3 text-muted border-0 rounded-0 bg-transparent"
                     >
                     Size Chart
@@ -172,6 +180,11 @@
                 <li class="nav-item" role="presentation">
                     <button
                     type="button"
+                    id="tab-care"
+                    role="tab"
+                    aria-controls="panel-care"
+                    aria-selected="false"
+                    tabindex="-1"
                     class="nav-link px-0 pb-3 text-muted border-0 rounded-0 bg-transparent"
                     >
                     Care Instructions
@@ -180,14 +193,45 @@
                 </ul>
 
                 <!--Tab Content: Details-->
-                <div>
-                <!--REMINDER: replace filler text with the correct text (see mockups in figma file)-->
+                <div id="panel-details" role="tabpanel" aria-labelledby="tab-details" tabindex="0">
                 <p class="text-muted mb-6">
-                    Designed for comfort, made for every day. The Everyday Comfort Tee combines a clean, 
-                    minimalist look with an effortless feel, making it a reliable choice for any occasion. 
-                    Whether you're relaxing at home or heading out, it's a reminder that feeling good starts with the simple things.
+                    PUT THIS PAGE'S DESCRIPTION HERE
                 </p>
+                </div>
 
+                <!--Tab Content: Size Chart-->
+                <div id="panel-size" role="tabpanel" aria-labelledby="tab-size" tabindex="0" hidden>
+                <div class="table-responsive mb-6">
+                    <table class="table">
+                        <caption>PUT THE TEE NAME HERE size chart, in centimeters</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Size</th>
+                                <th scope="col">Chest width</th>
+                                <th scope="col">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">XS</th><td>52</td><td>68</td></tr>
+                            <tr><th scope="row">S</th><td>54</td><td>70</td></tr>
+                            <tr><th scope="row">M</th><td>56</td><td>72</td></tr>
+                            <tr><th scope="row">L</th><td>58</td><td>74</td></tr>
+                            <tr><th scope="row">XL</th><td>60</td><td>76</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small text-muted mb-6">Chest width is measured flat, from armpit to armpit. Length is measured from the highest point of the shoulder to the hem.</p>
+                </div>
+
+                <!--Tab Content: Care Instructions-->
+                <div id="panel-care" role="tabpanel" aria-labelledby="tab-care" tabindex="0" hidden>
+                <ul class="mb-6">
+                    <li>Machine wash cold, inside out.</li>
+                    <li>Do not bleach.</li>
+                    <li>Tumble dry low, or hang dry to keep the shape.</li>
+                    <li>Iron on low heat on the reverse side, away from the print.</li>
+                    <li>Wash with similar colors.</li>
+                </ul>
                 </div>
             </div>
 
