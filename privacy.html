@@ -15,8 +15,6 @@
 
 .privacy-page .privacy-content {
     width: 100%;
-    background-color: #ffffff;
-    color: #252525;
     padding: 60px 20px;
 }
 
@@ -24,19 +22,10 @@
 
 .privacy-page .privacy-content p,
 .privacy-page .privacy-content li {
-    color: #252525;
     font-family: var(--bs-body-font);
     font-size: 15px;
     line-height: 1.8;
 }
-
-/* JUSTIFIED TEXT ALIGNMENT */
-
-.privacy-page .privacy-section p,
-.privacy-page .privacy-section li,
-.privacy-page .privacy-introduction p {
-    text-align: justify;
-}         
 
 /* INTRODUCTION AND POLICY SECTIONS */
 
@@ -56,7 +45,6 @@
     font-family: var(--bs-heading-font);
     font-size: 18px;
     font-weight: 700;
-    color: #252525;
     margin-bottom: 12px;
 }
  
@@ -75,19 +63,7 @@
     font-family: var(--bs-heading-font);
     font-size: 24px;
     font-weight: 700;
-    color: #252525;
     margin-bottom: 20px;
-}
-.privacy-page .privacy-section-heading .privacy-number {
-    font-family: var(--bs-heading-font);
-    font-size: 16px;
-    font-weight: 400;
-    color: #7cabc0;
-    flex-shrink: 0;
-}
-
-.privacy-page .privacy-section-heading h2 {
-    margin-bottom: 0;
 }
 
 /* BULLET POINTS */
@@ -99,6 +75,7 @@
 
 .privacy-page .privacy-section li {
     margin-bottom: 8px;
+    color: var(--theme-color);
 }
 
 /* RESPONSIVE DESIGN */
@@ -127,28 +104,6 @@
     }
 
 }
-      /* PRIVACY POLICY HEADER */
-
-.privacy-page header.privacy {
-    background-color: #f2f2f2;
-    padding-top: 120px;
-    padding-bottom: 40px;
-}
-
-.privacy-page header.privacy h1 {
-    font-family: var(--bs-heading-font);
-    font-size: 36px;
-    font-weight: 700;
-    color: #252525;
-    margin-bottom: 16px;
-}
-
-.privacy-page header.privacy p {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #252525;
-    max-width: 850px;
-}   
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100 privacy-page">
@@ -196,15 +151,15 @@
             </dialog>
         </div>
     </nav>
-    <header class="privacy">
-        <div class="container pt-12">
+    <header class="privacy pt-12 bg-secondary">
+        <div class="container pt-12 pb-4">
             <h1>Privacy Policy</h1>
             <p>
                 At BETTR, your privacy matters. Our Privacy Policy explains how we collect, use, and protect your personal information when you browse our website, contact us, or place an order. We are committed to handling your information responsibly and transparently.
             </p>
         </div>
     </header>
-    <main class="privacy-content">
+    <main class="privacy-content bg-standard">
         <section class="privacy-introduction">
             <h2>Introduction</h2>
             <p>
@@ -220,11 +175,7 @@
             </p>
         </section>
         <section class="privacy-section">
-            <section class="privacy-section">
-    <div class="privacy-section-heading">
-        <span class="privacy-number">01</span>
-        <h2>Your Information</h2>
-    </div>
+            <h2>01. Your Information</h2>
             <p>
                 BETTR may collect personal information that you voluntarily provide when contacting us or placing an order, including:
             </p>
@@ -239,11 +190,7 @@
             </p>
         </section>
         <section class="privacy-section">
-            <section class="privacy-section">
-    <div class="privacy-section-heading">
-        <span class="privacy-number">02</span>
-        <h2>Information Security</h2>
-    </div>
+            <h2>02. Information Security</h2>
 
             <p>
                 The information you provide may be used to:
@@ -262,11 +209,7 @@
             </p>
         </section>
          <section class="privacy-section">
-            <section class="privacy-section">
-    <div class="privacy-section-heading">
-        <span class="privacy-number">03</span>
-        <h2>Email Communications</h2>
-    </div>
+            <h2>03. Email Communications</h2>
 
             <p>
                 BETTR uses an email-based ordering process. When you click the Order Now button, your email application may open a pre-filled message containing your selected product, size, quantity, and other relevant order details.
@@ -281,10 +224,7 @@
             </p>
         </section>
          <section class="privacy-section">
-            <div class="privacy-section-heading">
-        <span class="privacy-number">04</span>
-        <h2>Information Sharing</h2>
-    </div> 
+            <h2>04. Information Sharing</h2>
 
             <p>
                 BETTR does not sell your personal information. Your information may be shared with service providers when necessary to operate the website or respond to your requests, or when disclosure is required or permitted by applicable law.
@@ -295,10 +235,7 @@
             </p>
         </section>
           <section class="privacy-section">
-            <div class="privacy-section-heading">
-        <span class="privacy-number">05</span>
-        <h2>Data Retention and Security</h2>
-    </div> 
+            <h2>05. Data Retention and Security</h2>
 
             <p>
                 BETTR will take reasonable measures to protect personal information against unauthorized access, disclosure, alteration, or loss.
@@ -313,10 +250,7 @@
             </p>
         </section>
          <section class="privacy-section">
-             <div class="privacy-section-heading">
-        <span class="privacy-number">06</span>
-        <h2>Your Privacy Rights</h2>
-    </div>
+            <h2>06. Your Privacy Rights</h2>
 
             <p>
                 Subject to applicable laws and limitations, you may have the right to:
@@ -361,7 +295,7 @@
             </p>
 
             <p>
-                Email: hello@examplewebsite142.com
+                Email: <a href="contact.html">hello@examplewebsite142.com</a>
             </p>
         </section>
     </main>
