@@ -1,0 +1,489 @@
+/* =========================
+   BETTR BRAND COLORS
+========================= */
+
+:root {
+    --bettr-cream: #fdfbf5;
+    --bettr-blue: #9bdcf5;
+    --bettr-light-blue: #effaff;
+    --bettr-footer: #b0ceda;
+    --bettr-dark: #292929;
+    --bettr-gray: #727272;
+    --bettr-eyebrow: #656565;
+}
+
+
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: var(--bettr-dark);
+    background: white;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.bettr-navbar {
+    background: white;
+    padding: 12px 0;
+}
+
+.navbar-brand img {
+    width: 85px;
+    height: auto;
+    display: block;
+}
+
+.bettr-navbar .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--bettr-dark);
+    font-size: 14px;
+    margin: 0 8px;
+    transition: color 0.2s ease;
+}
+
+.bettr-navbar .nav-link:hover {
+    color: #777777;
+}
+
+.bettr-navbar .nav-link.active {
+    font-weight: 600;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background: var(--bettr-cream);
+    width: 100%;
+    min-height: 1024px;
+    margin: 0;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Eyebrow */
+
+.eyebrow {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: var(--bettr-eyebrow);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+
+/* Hero Heading */
+
+.hero-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+/* Hero Products */
+
+.hero-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 35px;
+    max-width: 1050px;
+    width: 100%;
+}
+
+.hero-products img {
+    width: 36%;
+    height: 450px;
+    object-fit: contain;
+    margin: 0 -15px;
+}
+
+
+/* Hero Description */
+
+.hero-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 25px auto 35px;
+    max-width: 720px;
+}
+
+
+/* Default Button */
+
+.bettr-button {
+    display: inline-block;
+    background: var(--bettr-blue);
+    color: #111111;
+    border: none;
+    border-radius: 0;
+    padding: 12px 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+
+/* Hero CTA Button */
+
+.hero-section .bettr-button {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    padding: 14px 34px;
+    font-size: 16px;
+}
+
+.bettr-button:hover {
+    background: #82cde9;
+    color: #111111;
+}
+
+.bettr-button:focus-visible,
+.nav-link:focus-visible {
+    outline: 2px solid var(--bettr-dark);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   FEATURED PRODUCTS
+========================= */
+
+.products-section {
+    padding: 65px 20px 80px;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+/* Updated heading to match About heading */
+
+.section-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 3.5vw, 42px);
+}
+
+.product-card {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: var(--bettr-light-blue);
+    margin-bottom: 18px;
+    padding: 15px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.product-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--bettr-gray);
+    margin-bottom: 0;
+}
+
+.product-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.product-card .bettr-button {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    background: var(--bettr-cream);
+    width: 100%;
+    min-height: calc(1024px - 70px);
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    max-width: 920px;
+    height: 360px;
+    object-fit: cover;
+    margin: 0 auto 40px;
+}
+
+.about-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 3.5vw, 42px);
+    margin-bottom: 28px;
+}
+
+.about-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    max-width: 680px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.bettr-footer {
+    background: var(--bettr-footer);
+    padding: 35px 20px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.bettr-footer h3 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.bettr-footer .col-12.col-md-3 h3 {
+    font-weight: 600;
+}
+
+.bettr-footer a {
+    display: block;
+    width: fit-content;
+    font-weight: 400;
+    color: var(--bettr-dark);
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.bettr-footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   TABLET RESPONSIVENESS
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero-products {
+        max-width: 750px;
+    }
+
+    .hero-products img {
+        height: 300px;
+    }
+
+    .product-image {
+        height: 240px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 767px) {
+
+    .hero-section,
+    .about-section {
+        min-height: auto;
+        padding: 50px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-products {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero-products img {
+        width: 36%;
+        height: 170px;
+        margin: 0 -5px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .products-section {
+        padding: 45px 20px 55px;
+    }
+
+    .product-card {
+        max-width: 420px;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .about-image {
+        height: 220px;
+    }
+
+    /* Keep both section headings equal on mobile */
+
+    .section-heading h2,
+    .about-section h2 {
+        font-size: 23px;
+    }
+
+    .about-description {
+        font-size: 14px;
+    }
+
+    .bettr-footer {
+        padding-top: 30px;
+    }
+
+    .bettr-footer .row > div {
+        margin-bottom: 22px;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE SCREENS
+========================= */
+
+@media (max-width: 400px) {
+
+    .hero-section h1 {
+        font-size: 25px;
+    }
+
+    .hero-products img {
+        height: 140px;
+    }
+
+    .product-image {
+        height: 190px;
+    }
+
+}
