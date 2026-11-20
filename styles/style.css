@@ -266,6 +266,11 @@ footer a {
 
 /* - Terms and Conditions Page Stylesheet - */
 
+.terms-hero {
+    background-color: var(--theme-surface);
+    color: var(--theme-color);
+    padding: 7rem 0 2.5rem;
+
 }
 
 .terms-hero h1 {
